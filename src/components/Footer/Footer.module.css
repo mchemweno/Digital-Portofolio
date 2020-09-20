@@ -1,0 +1,60 @@
+.Footer {
+    background: black;
+    color: white;
+    text-align: center;
+}
+.Icon {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+.GetInTouchP {
+    font-size: 1rem;
+}
+
+.WorkTogetherP {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.IncP {
+    font-size:0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .GetInTouchP {
+        font-size: 1.5rem;
+    }
+
+    .WorkTogetherP {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .IncP {
+        font-size: 1rem;
+    }
+    .Icon {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Icon {
+        padding: 0 15rem;
+    }
+    .GetInTouchP {
+        font-size: 2rem;
+    }
+
+    .WorkTogetherP {
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .IncP {
+        font-size: 1.5rem;
+    }
+}

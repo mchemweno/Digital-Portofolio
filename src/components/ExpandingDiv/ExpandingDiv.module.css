@@ -1,0 +1,59 @@
+.ExpandingDiv {
+    background-color: #015C67;
+    color: white;
+    padding-top: 0.8em;
+    padding-left: 0.5em;
+    height: auto;
+    width: inherit;
+}
+
+.Name {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.Description {
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.line{
+    width: 5em;
+    border-bottom: 0.2em solid white;
+    margin-bottom: 0.2em;
+}
+
+.caretDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+@media only screen and (min-width: 768px){
+    .Name {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    .Description {
+        font-size: 2em;
+        margin-top: 1em;
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+    .ExpandingDiv {
+        padding-left: 1em;
+        padding-top: 1.3em;
+    }
+    .Name {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .Description {
+        font-size: 2.5em;
+        margin-top: 1em;
+    }
+}
+

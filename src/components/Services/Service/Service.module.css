@@ -1,0 +1,61 @@
+.Service {
+    background-size: cover;
+    width: 12em;
+    margin: 0.2em 0.5em 0.5em 0.5em;
+    border-radius: 3%;
+    color: white;
+    border: 1px solid rgba(1, 92, 103, 1);
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    height: auto;
+
+}
+
+.Overlay {
+    flex: 1;
+    background-color: rgba(1, 92, 103, 0.4);
+}
+
+.DetailsContainer {
+    padding: 5%;
+}
+
+.Title {
+    font-size: 1em;
+}
+
+.Body {
+    font-size: 0.9em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .Service {
+        width: 15em;
+        min-height: 15em;
+    }
+
+    .Title {
+        font-size: 1.3em;
+    }
+
+    .Body {
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .Service {
+        width: 18.5em;
+    }
+
+    .Title {
+        font-size: 1.5em;
+    }
+
+    .Body {
+        font-size: 1.3em;
+    }
+}

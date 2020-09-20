@@ -1,0 +1,30 @@
+.skill {
+    width: 4.4em;
+    height: 2.8em;
+    margin: 0.5em;
+    background-color: rgba(1, 92, 103, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    justify-self: center;
+    align-self: center;
+
+}
+.skillP {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .skill {
+        padding: 0.7em;
+    }
+    .skillP {
+        text-align: center;
+        font-size: 1em;
+        color: white;
+    }
+}

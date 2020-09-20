@@ -1,0 +1,90 @@
+.Projects {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: auto;
+}
+.subtitle {
+    padding-left: 0.5em;
+    font-size: 0.8em;
+    color: grey;
+    margin-bottom: 0;
+}
+
+.title {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+.githubContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.githubContainer p {
+    display: inline;
+    color: white;
+    background-color: black;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+.githubContainer p a {
+    padding-right: 0.5em;
+}
+.projectDivContainer {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin: 0 0.5em;
+}
+
+.projectDivContainer::-webkit-scrollbar {
+    display: none;
+}
+.projectDiv {
+    margin-top: 0;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 768px){
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .title {
+        margin-top: 0.3em;
+        padding-left: 0.7em;
+        font-size: 1.7em;
+    }
+    .githubContainer p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .subtitle {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    .title {
+        margin-top: 0.3em;
+        padding-left: 1em;
+        font-size: 1.7em;
+    }
+    .projectDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .githubContainer p {
+        font-size: 1.2em;
+    }
+}

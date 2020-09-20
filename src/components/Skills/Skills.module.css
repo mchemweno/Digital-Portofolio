@@ -1,0 +1,35 @@
+.Skills {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+}
+
+.servicesP {
+    padding-left: 0.5em;
+    font-size: 0.8em;
+    color: grey;
+    margin-bottom: 0;
+}
+titleDiv {
+
+}
+.skillDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.moreDiv {
+    margin-top: 0.2em;
+    color: #670C01;
+    text-align: end;
+}
+@media only screen and (min-width: 768px) {
+    .servicesP {
+        padding-left: 0.5em;
+        font-size: 1.4em;
+        color: grey;
+        margin-bottom: 0;
+    }
+    .moreDivP {
+        font-size: 1.5em;
+    }
+}

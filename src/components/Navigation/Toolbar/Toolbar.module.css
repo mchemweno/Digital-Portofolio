@@ -1,0 +1,41 @@
+.Toolbar {
+    height: 3em;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5em;
+    box-sizing: border-box;
+    z-index: 3;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.Toolbar nav {
+    height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .Toolbar {
+        height: 5em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Toolbar {
+        height: 6em;
+    }
+}
+
+@media (max-width: 499px) {
+    .Toolbar nav {
+        height: 100%;
+        display: none;
+    }
+}
+

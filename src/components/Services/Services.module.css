@@ -1,0 +1,82 @@
+.Services {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.servicesP {
+    padding-left: 0.5em;
+    font-size: 0.8em;
+    color: grey;
+    margin-bottom: 0;
+}
+.Heading {
+    flex: 1;
+}
+.ServiceDivContainer {
+    flex: 6;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin-right: 0.5em;
+}
+
+.ServiceDiv {
+    margin-top: 0;
+    display: inline-flex;
+    flex: 1;
+}
+
+
+
+.servicesH {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+
+.ServiceDivContainer::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px){
+    .servicesP {
+        font-size: 1.2em;
+    }
+
+    .servicesH {
+        margin-top: 0.3em;
+        padding-left: 0.7em;
+        font-size: 1.7em;
+    }
+}
+@media only screen and (min-width: 992px){
+    .servicesP {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    .servicesH {
+        margin-top: 0.3em;
+        padding-left: 1em;
+        font-size: 1.7em;
+    }
+    .ServiceDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (min-width: 321px){
+
+}

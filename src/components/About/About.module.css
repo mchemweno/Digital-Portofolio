@@ -1,0 +1,122 @@
+.About {
+    height: 19em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding-bottom: 0.5em;
+    box-sizing: border-box;
+}
+
+.servicesP {
+    padding-left: 0.5em;
+    font-size: 0.8em;
+    color: grey;
+    margin-bottom: 0;
+}
+
+.header {
+    flex: 1;
+}
+
+.servicesH {
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+
+.aboutContainer {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.aboutContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+.mark {
+    overflow: hidden;
+    border-radius: 3%;
+    padding: 0;
+    flex: 0.8;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.aboutMe {
+    box-sizing: border-box;
+    flex: 1;
+    margin: 0;
+    color: #ffffff;
+    background-color: rgba(103, 12, 1, 0.8);
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+.aboutMe p {
+    font-size: 0.9em;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .About {
+        height: 20em;
+    }
+    .aboutMe p {
+        font-size: 1.2em;
+    }
+
+    .servicesP {
+        font-size: 1.2em;
+    }
+
+    .servicesH {
+        margin-top: 0.3em;
+        padding-left: 0.7em;
+        font-size: 1.7em;
+    }
+    .aboutMeP {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .About {
+        width: 50vw;
+        height: 28em;
+    }
+
+    .aboutMe p {
+        font-size: 1.3em
+    }
+    .servicesP {
+        font-size: 1.2em;
+    }
+
+    .servicesH {
+        margin-top: 0.3em;
+        padding-left: 0.7em;
+        font-size: 1.7em;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+
+}

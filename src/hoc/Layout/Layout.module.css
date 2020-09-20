@@ -1,0 +1,19 @@
+.Content {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin-top: 3em;
+}
+
+@media only screen and (min-width: 768px) {
+    .Content {
+        margin-top: 5em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Content {
+        margin-top: 6em;
+    }
+}
+
