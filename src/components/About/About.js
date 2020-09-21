@@ -6,21 +6,21 @@ import mark2 from '../../assets/Images/mark2.jpg';
 const About = (props) => {
     return (
         <div className={classes.About}>
-            <div className={classes.header}>
-                <p className={classes.servicesP}>WHO I AM</p>
-                <p className={classes.servicesH}><strong>ABOUT ME</strong></p>
+            <div className={classes.Header}>
+                <p className={classes.ServicesP}>WHO I AM</p>
+                <p className={classes.ServicesH}><strong>ABOUT ME</strong></p>
             </div>
-            <div className={classes.aboutContainer}>
-                <div className={classes.mark}>
+            <div className={classes.AboutContainer}>
+                <div className={classes.Mark}>
                     <img src={mark1} alt={"Mark"}/>
                 </div>
-                <div className={classes.mark} style={{
+                <div className={classes.Mark} style={{
                     resize: 'contain'
                 }}>
                     <img src={mark2} alt={"Mark"}/>
                 </div>
-                <div className={classes.aboutMe}>
-                    <p className={classes.aboutMeP}>Freelance Web and Mobile App Developer based in Kenya. I enjoy everything from small business sites
+                <div className={classes.AboutMe}>
+                    <p className={classes.AboutMeP}>Freelance Web and Mobile App Developer based in Kenya. I enjoy everything from small business sites
                         to rich interactive web apps to native mobile apps.
                     </p>
                 </div>

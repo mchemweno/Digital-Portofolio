@@ -14,9 +14,9 @@ const ExpandingDiv = (props) => {
                         Mobile App Development <br/>Web Development
                     </p>
                 </div>
-                    <div className={classes.line}></div>
+                    <div className={classes.Line}></div>
                     <div
-                        className={classes.caretDiv}
+                        className={classes.CaretDiv}
 
                     >
                            <FontAwesomeIcon    onClick={props.scrollToAbout} icon={faCaretDown} color={'white'} size={"3x"}/>

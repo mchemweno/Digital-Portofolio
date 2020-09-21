@@ -14,20 +14,20 @@ const Projects = (props) => {
     return (
         <div className={classes.Projects}>
             <div>
-                <p className={classes.subtitle}>MY PROJECTS</p>
-                <p className={classes.title}><strong>RECENT WORK</strong></p>
+                <p className={classes.Subtitle}>MY PROJECTS</p>
+                <p className={classes.Title}><strong>RECENT WORK</strong></p>
             </div>
-            <div className={classes.projectDivContainer}>
+            <div className={classes.ProjectDivContainer}>
                 {
                     projects ?
-                        <div className={classes.projectDiv}>
+                        <div className={classes.ProjectDiv}>
                             {projects.splice(0, 5).map((project, index) => {
                                 return <Project key={index} project={project}/>
                             })}
                         </div> : error ? <div><p>{error.message}</p></div> : <Spinner/>
                 }
             </div>
-            <div className={classes.githubContainer}
+            <div className={classes.GithubContainer}
                  onClick={navigate}
             >
                 <p onClick={navigate}

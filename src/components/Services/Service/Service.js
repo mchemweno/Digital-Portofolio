@@ -5,7 +5,7 @@ const Service = (props) => {
     const service = props.service;
     return (
         <div style={{
-            backgroundImage: lContentStyle(service.image)
+            backgroundImage: `url(${service.image})`
         }}
              className={classes.Service}
         >
@@ -18,9 +18,4 @@ const Service = (props) => {
         </div>
     )
 }
-
-function lContentStyle(image) {
-    return `url(${image})`
-}
-
 export default Service;

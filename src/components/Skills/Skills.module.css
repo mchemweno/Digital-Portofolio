@@ -4,32 +4,35 @@
     padding: 2.5em;
 }
 
-.servicesP {
+.ServicesP {
     padding-left: 0.5em;
     font-size: 0.8em;
     color: grey;
     margin-bottom: 0;
 }
-titleDiv {
 
-}
-.skillDiv {
+.SkillDiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.moreDiv {
+.MoreDiv {
     margin-top: 0.2em;
     color: #670C01;
     text-align: end;
 }
 @media only screen and (min-width: 768px) {
-    .servicesP {
-        padding-left: 0.5em;
+    .ServicesP {
         font-size: 1.4em;
-        color: grey;
-        margin-bottom: 0;
     }
-    .moreDivP {
+    .MoreDivP {
         font-size: 1.5em;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .ServicesP {
+        font-size: 2em;
+    }
+    .MoreDivP {
+        font-size: 2em;
     }
 }

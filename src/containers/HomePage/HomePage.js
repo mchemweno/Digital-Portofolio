@@ -23,7 +23,7 @@ const HomePage = (props) => {
 
     const projects = useSelector(state => state.projects.projects);
     const fetchProjectsHandler = useCallback(async () => {
-        await sleep(5000);
+        await sleep(2000);
         try {
             await dispatch(fetchProjects());
         } catch (err) {
@@ -35,27 +35,27 @@ const HomePage = (props) => {
         console.log('haha');
     }, [fetchProjectsHandler])
     return (
-        <div className={classes.HomePage}>
-            <ExpandingDiv
-                classname={classes.ExpandDiv}
-                scrollToAbout={executeScroll}
-            />
-            <Services className={classes.Services}/>
-            <Projects
-                className={classes.Projects}
-                error={error}
-                projects={projects}
-            />
-            <div ref={aboutRef}>
-                <About
-                    className={classes.About}
+            <div className={classes.HomePage}>
+                <ExpandingDiv
+                    classname={classes.ExpandDiv}
+                    scrollToAbout={executeScroll}
+                />
+                <Services className={classes.Services}/>
+                <Projects
+                    className={classes.Projects}
+                    error={error}
+                    projects={projects}
+                />
+                <div ref={aboutRef}>
+                    <About
+                        className={classes.About}
 
-                ></About>
+                    ></About>
+                </div>
+                <Skills className={classes.Skills}></Skills>
+                <Footer
+                    className={classes.Footer}></Footer>
             </div>
-            <Skills className={classes.Skills}></Skills>
-            <Footer
-                className={classes.Footer}></Footer>
-        </div>
     )
 };
 

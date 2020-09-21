@@ -1,4 +1,4 @@
-.skill {
+.Skill {
     width: 4.4em;
     height: 2.8em;
     margin: 0.5em;
@@ -11,7 +11,7 @@
     align-self: center;
 
 }
-.skillP {
+.SkillP {
     margin: 0;
     text-align: center;
     font-size: 0.8rem;
@@ -19,12 +19,17 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .skill {
+    .Skill {
         padding: 0.7em;
     }
-    .skillP {
-        text-align: center;
+    .SkillP {
         font-size: 1em;
-        color: white;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Skill {
+    }
+    .SkillP {
+        font-size: 1.2em;
     }
 }

@@ -3,25 +3,25 @@
     overflow-y: hidden;
     height: auto;
 }
-.subtitle {
+.Subtitle {
     padding-left: 0.5em;
     font-size: 0.8em;
     color: grey;
     margin-bottom: 0;
 }
 
-.title {
+.Title {
     margin-top: 0.5rem;
     margin-bottom: 0;
     padding-left: 1em;
     font-size: 1.2em;
 }
-.githubContainer {
+.GithubContainer {
     display: flex;
     justify-content: center;
 }
 
-.githubContainer p {
+.GithubContainer p {
     display: inline;
     color: white;
     background-color: black;
@@ -29,10 +29,10 @@
     border-radius: 10px;
     font-size: 0.9em;
 }
-.githubContainer p a {
+.GithubContainer p a {
     padding-right: 0.5em;
 }
-.projectDivContainer {
+.ProjectDivContainer {
     overflow-x: auto;
     overflow-y: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -40,10 +40,10 @@
     margin: 0 0.5em;
 }
 
-.projectDivContainer::-webkit-scrollbar {
+.ProjectDivContainer::-webkit-scrollbar {
     display: none;
 }
-.projectDiv {
+.ProjectDiv {
     margin-top: 0;
     display: flex;
     flex: 1;
@@ -53,38 +53,38 @@
 
 
 @media only screen and (min-width: 768px){
-    .subtitle {
+    .Subtitle {
         font-size: 1.2em;
     }
 
-    .title {
+    .Title {
         margin-top: 0.3em;
         padding-left: 0.7em;
         font-size: 1.7em;
     }
-    .githubContainer p {
+    .GithubContainer p {
         font-size: 1em;
     }
 }
 
 @media only screen and (min-width: 992px){
-    .subtitle {
+    .Subtitle {
         font-size: 1.2em;
         margin-bottom: 0;
     }
 
-    .title {
+    .Title {
         margin-top: 0.3em;
         padding-left: 1em;
         font-size: 1.7em;
     }
-    .projectDiv {
+    .ProjectDiv {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .githubContainer p {
+    .GithubContainer p {
         font-size: 1.2em;
     }
 }

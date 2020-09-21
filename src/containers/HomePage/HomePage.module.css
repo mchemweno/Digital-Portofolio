@@ -11,34 +11,37 @@
     "About"
     "Skills"
     "Footer";
-    animation: translate-element 2s ease-in-out;
 }
 
 
 .ExpandDiv {
     grid-area: ExpandDiv;
-
-
+    animation: translate-element 1s ease-in;
 }
 
 .Services {
     grid-area: Services;
+    animation: translate-element2 1s ease-in;
 }
 
 .Projects {
     grid-area: Projects;
+    animation: translate-element 1s ease-in;
 }
 
 .About {
     grid-area: About;
+    animation: translate-element2 1s ease-in;
 }
 
 .Skills {
     grid-area: Skills;
+    animation: translate-element 1s ease-in;
 }
 
 .Footer {
     grid-area: Footer;
+    animation: translate-element3 1s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -46,6 +49,7 @@
         grid-template-rows: auto auto auto auto auto auto;
     }
 }
+
 
 @media only screen and (min-width: 992px) {
     .HomePage {
@@ -60,10 +64,27 @@
 }
 
 @keyframes translate-element {
-    from {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes translate-element2 {
+    0% {
         transform: translateX(-100%);
     }
-    to {
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes translate-element3 {
+    0% {
+        transform: translatey(+100%);
+    }
+    100% {
         transform: translateX(0);
     }
 }

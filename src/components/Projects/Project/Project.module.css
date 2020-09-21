@@ -1,4 +1,4 @@
-.project {
+.Project {
 
     border-radius: 2%;
     width: 9em;
@@ -12,17 +12,17 @@
     position: relative;
     flex-direction: column;
 }
-.headerContainer {
+.HeaderContainer {
     flex: 6;
     overflow: hidden;
     background-size: cover;
     display: flex;
 }
-.overlay {
+.Overlay {
     flex: 1;
     background-color: rgba(1, 92, 103, 0.2);
 }
-.gitContainer {
+.GitContainer {
     position: absolute;
     top: 4.5em;
     right: 0.5em;
@@ -32,11 +32,11 @@
     z-index: 2;
 
 }
-.gitContainer a {
+.GitContainer a {
     display: inline;
     font-size: 1.4em;
 }
-.detailsContainer {
+.DetailsContainer {
     flex: 4;
     position: relative;
     display: flex;
@@ -44,56 +44,56 @@
     border-left: 1px solid #015C67 ;
     border-right: 1px solid #015C67 ;
 }
-.project p {
+.Project p {
     margin-top: 0.5em;
     font-size: 0.9em;
     color: #670C01;
 }
 
-.title {
+.Title {
     position: absolute;
     top: 0.5em;
     left: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
-    .project {
+    .Project {
         width: 10em;
         height: 10em;
         margin-top: 0.7em;
         margin-right: 1.5em;
         margin-bottom: 0.7em;
     }
-    .project p {
+    .Project p {
         margin-top: 0.7em;
         font-size: 1.1em;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .project {
+    .Project {
         width: 10em;
         height: 10em;
         margin-top: 0.7em;
         margin-right: 1.5em;
         margin-bottom: 0.7em;
     }
-    .project p {
+    .Project p {
         margin-top: 0.7em;
         font-size: 1.1em;
     }
-    .gitContainer {
+    .GitContainer {
         top: 4.6em;
         padding: 0.3em 0.3em 0 0.3em;
     }
-    .gitContainer a {
+    .GitContainer a {
         display: inline;
         font-size: 1.7em;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .project {
+    .Project {
         width: 12em;
         height: 14em;
         margin-top: 2em;
@@ -101,11 +101,11 @@
         margin-bottom: 0.7em;
     }
 
-    .project p {
+    .Project p {
         margin-top: 0.7em;
         font-size: 1.5em;
     }
-    .gitContainer {
+    .GitContainer {
         position: absolute;
         top: 6.8em;
         right: 0.5em;
@@ -114,7 +114,7 @@
         border-radius: 100%;
         z-index: 2;
     }
-    .gitContainer a {
+    .GitContainer a {
         font-size: 2em;
     }
 }

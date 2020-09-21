@@ -10,24 +10,24 @@ const Project = (props) => {
         window.location = project.link;
     }
     return (
-        <div className={classes.project}
+        <div className={classes.Project}
              onClick={navigate}
         >
 
-            <div className={classes.headerContainer}
+            <div className={classes.HeaderContainer}
                  style={{
                      backgroundImage: `url(${project.image})`
                  }}
             >
-                <div className={classes.overlay}>
-                    <div className={classes.gitContainer}>
+                <div className={classes.Overlay}>
+                    <div className={classes.GitContainer}>
                         <a href={project.link}><FontAwesomeIcon icon={faGithub} color={'black'}/></a>
                     </div>
                 </div>
             </div>
 
-            <div className={classes.detailsContainer}>
-                <div className={classes.title}>
+            <div className={classes.DetailsContainer}>
+                <div className={classes.Title}>
                     <p><strong>{project.name}</strong></p>
                 </div>
             </div>

@@ -27,17 +27,17 @@ const Skills = (props) => {
     ]
     return <div className={[props.className, classes.Skills].join(' ')}>
         <div>
-            <p className={classes.servicesP}>SKILLS</p>
+            <p className={classes.ServicesP}>SKILLS</p>
         </div>
-        <div className={classes.skillDiv}>
+        <div className={classes.SkillDiv}>
             {skills.map((skill, index) => {
                 return (
                     <Skill key={index} skill={skill}/>
                 )
             })}
         </div>
-        <div className={classes.moreDiv}>
-            <p className={classes.moreDivP}><FontAwesomeIcon icon={faArrowAltCircleRight} color={'#670C01'} size={"1x"}/>more</p>
+        <div className={classes.MoreDiv}>
+            <p className={classes.MoreDivP}><FontAwesomeIcon icon={faArrowAltCircleRight} color={'#670C01'} size={"1x"}/>more</p>
         </div>
     </div>
 };
