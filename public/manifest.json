@@ -2,11 +2,7 @@
   "short_name": "Canary App",
   "name": "Canary Digital Portfolio App",
   "icons": [
-    {
-      "src": "logo1.png",
-      "type": "image/png",
-      "sizes": "392x392"
-    }
+
   ],
   "start_url": ".",
   "display": "standalone",

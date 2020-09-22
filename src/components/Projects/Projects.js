@@ -3,13 +3,21 @@ import classes from './Projects.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import Project from "./Project/Project";
+import {useHistory} from 'react-router-dom';
 import Spinner from "../../UI/Spinner/Spinner";
+import {faArrowAltCircleRight} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = (props) => {
     const projects = props.projects;
     const error = props.error;
+    const history = useHistory();
     const navigate = () => {
         window.location = "https://github.com/mchemweno";
+    }
+    const navigate1 = () => {
+        history.push({
+            pathname: '/projects'
+        })
     }
     return (
         <div className={classes.Projects}>
@@ -21,11 +29,14 @@ const Projects = (props) => {
                 {
                     projects ?
                         <div className={classes.ProjectDiv}>
-                            {projects.splice(0, 5).map((project, index) => {
+                            {projects.slice(0,4).map((project, index) => {
                                 return <Project key={index} project={project}/>
                             })}
                         </div> : error ? <div><p>{error.message}</p></div> : <Spinner/>
                 }
+            </div>
+            <div  className={classes.MoreDiv}>
+                <p onClick={navigate1} className={classes.MoreDivP}><FontAwesomeIcon icon={faArrowAltCircleRight} color={'#670C01'} size={"1x"}/>more</p>
             </div>
             <div className={classes.GithubContainer}
                  onClick={navigate}
