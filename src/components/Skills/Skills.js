@@ -20,13 +20,15 @@ const Skills = (props) => {
             <p className={classes.ServicesP}>SKILLS</p>
         </div>
         <div className={classes.SkillDiv}>
+
             {
                 skills ?
-                        skills.slice(0,6).map((skill, index) => {
-                            return <Skill key={index} skill={skill}/>
-                        })
-                    : error ? <div><p>{error.message}</p></div> : <div style={{ justifyContent: "center", alignContent: "center" }}><Spinner/></div>
+                    skills.slice(0,6).map((skill, index) => {
+                        return <Skill key={index} skill={skill}/>
+                    })
+                    : error ? <div><p>{error.message}</p></div> : <div className={classes.SpinnerDiv}><Spinner/></div>
             }
+
         </div>
         <div  className={classes.MoreDiv}>
             <p onClick={navigate} className={classes.MoreDivP}><FontAwesomeIcon icon={faArrowAltCircleRight} color={'#670C01'} size={"1x"}/>more</p>
