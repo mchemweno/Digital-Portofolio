@@ -5,7 +5,7 @@ const Skill = (props) => {
     const skill = props.skill;
     return (
         <div className={classes.Skill}>
-            <p className={classes.SkillP}>{skill.name}</p>
+            <a href={skill.link} className={classes.SkillP}>{skill.name}</a>
         </div>
     )
 

@@ -16,7 +16,7 @@ const Footer = (props) => {
             <a href={"https://twitter.com/_canary69"}><FontAwesomeIcon icon={faTwitter} color={'rgba(1, 92, 103, 1)'}/></a>
             <a href={'https://wa.me/254726990002'}><FontAwesomeIcon icon={faWhatsapp} color={'rgba(1, 92, 103, 1)'}/></a>
         </p>
-        <p className={classes.IncP}>Powered by CANARY&trade; and React.</p>
+        <p className={classes.IncP}>Powered by CANARY&trade; & React.</p>
     </div>
 };
 export default Footer;

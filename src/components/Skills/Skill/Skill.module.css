@@ -11,6 +11,9 @@
     align-self: center;
 
 }
+.Skill a {
+    text-decoration: none;
+}
 .SkillP {
     margin: 0;
     text-align: center;
