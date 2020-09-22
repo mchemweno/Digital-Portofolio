@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     animation: translate-element 1s ease-in;
     margin: 4em 1em;
+    justify-content: center;
 
 }
 
