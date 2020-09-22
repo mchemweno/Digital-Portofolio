@@ -9,7 +9,7 @@ const Projects = (props) => {
     const error = props.error;
     return (
         <div className={classes.Projects}>
-            {projects ? <ProjectsContainer /> : error ? <div><p>{error.message}</p></div> : <Spinner/>}
+            {projects ? <ProjectsContainer projects={projects}/> : error ? <div><p>{error.message}</p></div> : <Spinner/>}
         </div>
     )
 };
