@@ -1,0 +1,18 @@
+.SkillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    animation: translate-element 1s ease-in;
+    margin: 4em 1em;
+
+}
+
+@keyframes translate-element {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+

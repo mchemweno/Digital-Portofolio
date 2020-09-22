@@ -13,12 +13,14 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const HomePage = (props) => {
     const error = props.error;
+    const skillError = props.skillError;
 
     const aboutRef = useRef(null);
 
     const executeScroll = () => scrollToRef(aboutRef);
 
     const projects = useSelector(state => state.projects.projects);
+    const skills = useSelector(state => state.skills.skills);
 
     return (
             <div className={classes.HomePage}>
@@ -38,7 +40,11 @@ const HomePage = (props) => {
 
                     ></About>
                 </div>
-                <Skills className={classes.Skills}></Skills>
+                <Skills
+                    className={classes.Skills}
+                    skillError={skillError}
+                    skills={skills}
+                ></Skills>
                 <Footer
                     className={classes.Footer}></Footer>
             </div>

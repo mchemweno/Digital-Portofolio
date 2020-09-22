@@ -8,9 +8,11 @@ import projectsReducer from "./store/reducers/projects";
 import thunk from "redux-thunk";
 import {Provider} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
+import skillsReducer from "./store/reducers/skills";
 
 const rootReducer = combineReducers({
-    projects: projectsReducer
+    projects: projectsReducer,
+    skills: skillsReducer
 })
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));

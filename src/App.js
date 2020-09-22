@@ -7,6 +7,7 @@ import Skills from "./containers/Skills/Skills";
 import Projects from "./containers/Projects/Projects";
 import {fetchProjects} from "./store/actions/projects";
 import {useDispatch} from "react-redux";
+import {fetchSkills} from "./store/actions/skills";
 
 const sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -15,8 +16,16 @@ const sleep = (ms) => {
 const App = () => {
     const dispatch = useDispatch();
     const [error, setError] = useState(null);
+    const [skillError, setSkillError] = useState(null);
 
-
+    const fetchSkillsHandler = useCallback(async () => {
+        await sleep(2000);
+        try {
+            await dispatch(fetchSkills());
+        } catch (err) {
+            return err;
+        }
+    }, [dispatch]);
     const fetchProjectsHandler = useCallback(async () => {
         await sleep(2000);
         try {
@@ -28,13 +37,14 @@ const App = () => {
 
     useEffect(() => {
         fetchProjectsHandler().catch(err => setError(err.message));
+        fetchSkillsHandler().catch(err => setSkillError(err.message))
         console.log('haha');
-    }, [fetchProjectsHandler])
+    }, [fetchProjectsHandler, fetchSkillsHandler])
     return (
         <Layout>
             <Switch>
-                <Route path={'/'} exact component={() => <HomePage error={error}/>}/>
-                <Route path={'/skills'} exact component={Skills}/>
+                <Route path={'/'} exact component={() => <HomePage  error={error} skillError={skillError}/>}/>
+                <Route path={'/skills'} exact component={() => <Skills skillError={skillError}/>}/>
                 <Route path={'/projects'} component={() => <Projects error={error} />} />
             </Switch>
         </Layout>
