@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    animation: translate-element 1s ease-in;
+    animation: translate-element 0.5s ease-in;
     margin:5em 0 1em 0;
 }
 

@@ -1,7 +1,7 @@
 .SkillsContainer {
     display: flex;
     flex-wrap: wrap;
-    animation: translate-element 1s ease-in;
+    animation: translate-element 0.5s ease-in;
     margin: 4em 1em;
     justify-content: center;
 
