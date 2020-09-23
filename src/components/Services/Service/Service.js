@@ -3,11 +3,13 @@ import classes from './Service.module.css';
 
 const Service = (props) => {
     const service = props.service;
+
     return (
         <div style={{
             backgroundImage: `url(${service.image})`
         }}
              className={classes.Service}
+             onClick={() => props.serviceCardToggleHandler(service)}
         >
             <div className={classes.Overlay}>
                 <div className={classes.DetailsContainer}>
