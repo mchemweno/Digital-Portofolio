@@ -82,6 +82,27 @@
 
 }
 
+@media only screen and (max-height: 767.98px) and (orientation: landscape){
+    .ServiceOverlayCard {
+        width: 30em;
+        max-width:30em;
+        height: 15em;
+        top: 10%;
+    }
+    .TitleP {
+        font-size: 1.2em;
+    }
+
+    .DetailsP {
+        font-size: 1.1em;
+    }
+
+    .Open {
+        transform: translateY(10%);
+    }
+}
+
+
 @media only screen and (min-width: 992px) {
     @media only screen and (min-width: 768px) {
         .ServiceOverlayCard {
