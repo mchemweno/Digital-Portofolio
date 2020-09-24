@@ -1,19 +1,42 @@
 .SkillsContainer {
     display: flex;
-    flex-wrap: wrap;
-    animation: translate-element 0.5s ease-in;
-    margin: 4em 1em;
-    justify-content: center;
+    animation: translate-element 1s ease-in;
+    flex-direction: column;
+    margin: 0 1em;
 
+
+}
+.TitleContainer {
+    flex: 1;
+    font-size: 1.2em;
+    color: #015C67;
+    margin: 0;
+}
+.SkillsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @keyframes translate-element {
     0% {
-        transform: translateY(+100%);
+        opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        opacity: 1;
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .TitleContainer {
+        font-size: 1.7em;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .TitleContainer {
+        font-size: 2.2em;
+    }
+}
 

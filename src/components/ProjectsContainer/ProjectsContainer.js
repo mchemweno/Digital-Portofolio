@@ -6,9 +6,14 @@ const ProjectsContainer = (props) => {
     const projects = props.projects;
     return (
         <div className={classes.ProjectsContainer}>
-            {projects.map((project, index) => {
-                return <Project key={index} project={project}/>
-            })}
+            <div className={classes.TitleContainer}>
+                <p><strong>More Projects</strong></p>
+            </div>
+            <div className={classes.ProjectsWrapper}>
+                {projects.map((project, index) => {
+                    return <Project key={index} project={project}/>
+                })}
+            </div>
         </div>
     )
 }
