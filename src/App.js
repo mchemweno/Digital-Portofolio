@@ -23,7 +23,7 @@ const App = () => {
         try {
             await dispatch(fetchSkills());
         } catch (err) {
-            return err;
+            throw new Error(err.message)
         }
     }, [dispatch]);
     const fetchProjectsHandler = useCallback(async () => {
@@ -31,15 +31,19 @@ const App = () => {
         try {
             await dispatch(fetchProjects());
         } catch (err) {
-            return err;
+            throw new Error(err.message)
         }
     }, [dispatch]);
 
     useEffect(() => {
-        fetchProjectsHandler().catch(err => setError(err.message));
-        fetchSkillsHandler().catch(err => setSkillError(err.message))
+        fetchProjectsHandler().catch(err => {
+            setError(err.message);
+        });
+        fetchSkillsHandler().catch(err => {
+            setSkillError(err.message);
+        })
         console.log('haha');
-    }, [fetchProjectsHandler, fetchSkillsHandler])
+    }, [fetchProjectsHandler, fetchSkillsHandler, error, skillError])
     return (
         <Layout>
             <Switch>

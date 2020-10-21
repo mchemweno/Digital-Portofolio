@@ -20,7 +20,7 @@ export const fetchSkills = () => {
                 skills: skills
             })
         } catch (err) {
-            return err
+            throw new Error(err.message)
         }
 
 

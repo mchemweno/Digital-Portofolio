@@ -7,9 +7,10 @@ import ProjectsContainer from "../../components/ProjectsContainer/ProjectsContai
 const Projects = (props) => {
     const projects = useSelector(state => state.projects.projects);
     const error = props.error;
+
     return (
         <div className={classes.Projects}>
-            {projects ? <ProjectsContainer projects={projects}/> : error ? <div><p>{error.message}</p></div> : <Spinner/>}
+            {projects ? <ProjectsContainer projects={projects}/> : error ? <div><p>{error}</p></div> : <Spinner/>}
         </div>
     )
 };

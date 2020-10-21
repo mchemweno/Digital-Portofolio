@@ -4,6 +4,7 @@ import Project from "../Projects/Project/Project";
 
 const ProjectsContainer = (props) => {
     const projects = props.projects;
+
     return (
         <div className={classes.ProjectsContainer}>
             <div className={classes.TitleContainer}>

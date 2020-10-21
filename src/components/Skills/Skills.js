@@ -26,7 +26,7 @@ const Skills = (props) => {
                     skills.slice(0,6).map((skill, index) => {
                         return <Skill key={index} skill={skill}/>
                     })
-                    : error ? <div><p>{error.message}</p></div> : <div className={classes.SpinnerDiv}><Spinner/></div>
+                    : error ? <div><p>{error}</p></div> : <div className={classes.SpinnerDiv}><Spinner/></div>
             }
 
         </div>

@@ -9,6 +9,7 @@ export const fetchProjects = () => {
                     method: 'GET'
                 }
             );
+
             if (response.status !== 200) {
                 throw new Error('Something went wrong')
             }
@@ -20,7 +21,7 @@ export const fetchProjects = () => {
                 projects: projects
             })
         } catch (err) {
-            return err
+            throw new Error(err.message)
         }
 
 

@@ -22,7 +22,7 @@ const Projects = (props) => {
     return (
         <div className={classes.Projects}>
             <div>
-                <p className={classes.Subtitle}>MY PROJECTS</p>
+                <p className={classes.Subtitle}>PROJECTS UNDERTAKEN</p>
                 <p className={classes.Title}><strong>RECENT WORK</strong></p>
             </div>
             <div className={classes.ProjectDivContainer}>
@@ -32,7 +32,7 @@ const Projects = (props) => {
                             {projects.slice(0,4).map((project, index) => {
                                 return <Project key={index} project={project}/>
                             })}
-                        </div> : error ? <div><p>{error.message}</p></div> : <Spinner/>
+                        </div> : error ? <div><p>{error}</p></div> : <Spinner/>
                 }
             </div>
             <div  className={classes.MoreDiv}>
